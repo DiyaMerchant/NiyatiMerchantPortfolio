@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="default">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Niyati Merchant — Portfolio 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Grain overlay -->
+<div class="grain"></div>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- Progress bar -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- Confetti canvas -->
+<canvas id="confettiCanvas"></canvas>
+
+<!-- NAV -->
+<header class="nav">
+  <button class="logo" id="navToggle" aria-label="Open menu">
+    <span class="logo-text">NM</span>
+    <span class="logo-bars"><i></i><i></i><i></i></span>
+  </button>
+
+  <div class="nav-right">
+    <a href="./Niyati-Merchant-Resume.pdf" download class="cv-btn" aria-label="Download CV">
+      <span>Download CV</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+    </a>
+
+    <!-- 3-mode toggle -->
+    <div class="mode-toggle" id="modeToggle" role="group" aria-label="Color mode">
+      <button class="mode-opt" data-mode="light" aria-label="Light mode">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <button class="mode-opt" data-mode="default" aria-label="Default mode">
+        <span class="mid-dot"></span>
+      </button>
+      <button class="mode-opt" data-mode="dark" aria-label="Dark mode">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <span class="mode-thumb" id="modeThumb"></span>
+    </div>
+  </div>
+
+  <nav class="nav-menu" id="navMenu">
+    <a href="#about">Who Am I</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#events">Events</a>
+    <a href="#services">Services</a>
+    <a href="#connect">Connect</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="hello" class="hero section-pink">
+  <div class="floating-shape shape-1"></div>
+  <div class="floating-shape shape-2"></div>
+  <div class="hero-text">
+    <p class="kicker reveal">Portfolio • 2026</p>
+    <h1 class="reveal"><span class="hello-word">Hello,</span><br><span class="accent">I'm Niyati.</span></h1>
+    <p class="sub reveal">Designer · Strategist · Storyteller</p>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>GRAPHIC DESIGN</span><span class="dot">✦</span>
+    <span>PHOTOGRAPHY</span><span class="dot">✦</span>
+    <span>BRANDING</span><span class="dot">✦</span>
+    <span>SOCIAL MEDIA</span><span class="dot">✦</span>
+    <span>PACKAGING</span><span class="dot">✦</span>
+    <span>UI / UX</span><span class="dot">✦</span>
+    <span>ADVERTISING</span><span class="dot">✦</span>
+    <span>MARKETING</span><span class="dot">✦</span>
+
+    <span>GRAPHIC DESIGN</span><span class="dot">✦</span>
+    <span>PHOTOGRAPHY</span><span class="dot">✦</span>
+    <span>BRANDING</span><span class="dot">✦</span>
+    <span>SOCIAL MEDIA</span><span class="dot">✦</span>
+    <span>PACKAGING</span><span class="dot">✦</span>
+    <span>UI / UX</span><span class="dot">✦</span>
+    <span>ADVERTISING</span><span class="dot">✦</span>
+    <span>MARKETING</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- WHO AM I -->
+<section id="about" class="who section-pink">
+  <p class="section-label reveal">Who Am I</p>
+  <h2 class="section-title reveal">The Creative <em>Behind</em> the Work.</h2>
+
+  <blockquote class="quote reveal">
+    "I enjoy being challenged and consistently aim to enhance my skills.
+    Creative people and their work is always an inspiration."
+  </blockquote>
+
+  <p class="who-text reveal">
+    Designing visuals that don't just look good, they communicate, connect, and convert.
+    I'm passionate about clean design, storytelling, and building brands with personality.
+    When not designing, I'm usually diving into creative side projects or finding
+    inspiration in the little details around me.
+  </p>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="education section-pink">
+  <p class="section-label reveal">Education</p>
+  <h2 class="section-title reveal">Built <em>to</em> Create.</h2>
+
+  <div class="timeline">
+    <div class="t-item slide-left"><span class="year">2023–2024</span><div><h4>Indian School of Media</h4><p>Post Graduate Diploma in Event Managment and Public Relations</p></div></div>
+    <div class="t-item slide-left"><span class="year">2020–2023</span><div><h4>Lala Lajpat Rai College</h4><p>B.A.M.M.C in Advertisement</p></div></div>
+    <div class="t-item slide-left"><span class="year">2019–2022</span><div><h4>FX School</h4><p>Graphic Design and Digital Art Certificate Course</p></div></div>
+    <div class="t-item slide-left"><span class="year">2019</span><div><h4>ISDI</h4><p>Introduction to Design Studio Certificate Course</p></div></div>
+    <div class="t-item slide-left"><span class="year">2018–2020</span><div><h4>K.C. College</h4><p>H.S.C College</p></div></div>
+    <div class="t-item slide-left"><span class="year">2018</span><div><h4>Compufield</h4><p>Diploma in Digital Graphics</p></div></div>
+    <div class="t-item slide-left"><span class="year">2005–2018</span><div><h4>Queen Mary School</h4><p>I.C.S.E School</p></div></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="career section-green">
+  <p class="section-label reveal">Experience</p>
+  <h2 class="section-title reveal">Where I've <em>Made</em> My Mark.</h2>
+
+  <div class="accordion">
+    <div class="acc-item reveal">
+      <button class="acc-head"><span class="acc-brand">era aura</span><span class="acc-role">Marketing and Design Head</span><span class="acc-year">2025</span><span class="acc-toggle">+</span></button>
+      <div class="acc-body"><p>Leading the brand's marketing direction and visual identity from the ground up. I oversee campaign ideation, design systems, and content strategy, making sure every touchpoint feels intentional and on brand.</p></div>
+    </div>
+    <div class="acc-item reveal">
+      <button class="acc-head"><span class="acc-brand">NoFiltr</span><span class="acc-role">Talent Management</span><span class="acc-year">2023–2024</span><span class="acc-toggle">+</span></button>
+      <div class="acc-body"><p>Managed creator relationships and coordinated brand-talent partnerships. Supported campaign rollouts end to end, from briefing to delivery, while keeping creators and clients aligned.</p></div>
+    </div>
+    <div class="acc-item reveal">
+      <button class="acc-head"><span class="acc-brand">Plane Crazy</span><span class="acc-role">Graphic Design (Internship)</span><span class="acc-year">2022</span><span class="acc-toggle">+</span></button>
+      <div class="acc-body"><p>Designed digital and print creatives across multiple campaigns. Worked closely with the team to translate brand guidelines into clean, consistent visual deliverables.</p></div>
+    </div>
+    <div class="acc-item reveal">
+      <button class="acc-head"><span class="acc-brand">Love For Music</span><span class="acc-role">Graphic Design</span><span class="acc-year">2022</span><span class="acc-toggle">+</span></button>
+      <div class="acc-body"><p>Created event posters, promotional graphics, and visual identity assets for music driven campaigns. Focused on capturing mood and rhythm through type and color.</p></div>
+    </div>
+    <div class="acc-item reveal">
+      <button class="acc-head"><span class="acc-brand">Airborne Aerial Fitness</span><span class="acc-role">Graphic Design (Freelance)</span><span class="acc-year">2021</span><span class="acc-toggle">+</span></button>
+      <div class="acc-body"><p>Built a fresh visual language for the studio, branding, posters, and social creatives. Translated the energy of aerial fitness into a strong, recognisable identity.</p></div>
+    </div>
+    <div class="acc-item reveal">
+      <button class="acc-head"><span class="acc-brand">Viral Fission</span><span class="acc-role">Campus Ambassador, Digital Marketing (Internship)</span><span class="acc-year">2021</span><span class="acc-toggle">+</span></button>
+      <div class="acc-body"><p>Represented the brand on campus and led digital marketing initiatives. Drove engagement through campaigns, content pushes, and on ground community building.</p></div>
+    </div>
+    <div class="acc-item reveal">
+      <button class="acc-head"><span class="acc-brand">The Fit Geek Show</span><span class="acc-role">Graphic Design, Video Editor, Social Media Strategist (Freelance)</span><span class="acc-year">2021</span><span class="acc-toggle">+</span></button>
+      <div class="acc-body"><p>Designed episode artwork, edited promo videos, and shaped the show's social presence. Built a content calendar that kept output consistent and audience growth steady.</p></div>
+    </div>
+    <div class="acc-item reveal">
+      <button class="acc-head"><span class="acc-brand">Mould Fitness</span><span class="acc-role">Graphic Design, Video Editor, Website Design (Internship)</span><span class="acc-year">2021</span><span class="acc-toggle">+</span></button>
+      <div class="acc-body"><p>Built website assets, edited fitness reels, and produced steady design collateral. Helped tighten the brand's visual identity across web and social.</p></div>
+    </div>
+    <div class="acc-item reveal">
+      <button class="acc-head"><span class="acc-brand">One of a Kind</span><span class="acc-role">Graphic Design, Social Media Strategist (Internship)</span><span class="acc-year">2021</span><span class="acc-toggle">+</span></button>
+      <div class="acc-body"><p>Designed brand-aligned graphics and helped shape the social media strategy. Focused on building campaigns that felt cohesive across every platform.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="work section-pink">
+  <p class="section-label reveal">Projects</p>
+  <h2 class="section-title reveal">A Look at <em>What</em> I've Made.</h2>
+  <p class="section-sub reveal">Hover to flip · Click to view gallery.</p>
+
+  <div class="work-grid">
+    <button class="work-card slide-side" data-project="mould" data-art="art-1">
+      <div class="wc-inner">
+        <div class="wc-front">
+          <div class="logo-slot"><img src="./projects2/logos/mould%20fitness.JPG" alt="Mould Fitness logo" onerror="this.style.display='none'"/></div>
+          <h3>Mould Fitness</h3>
+        </div>
+        <div class="wc-back"><span>View Project →</span></div>
+      </div>
+    </button>
+    <button class="work-card slide-side" data-project="onekind" data-art="art-2">
+      <div class="wc-inner">
+        <div class="wc-front">
+          <div class="logo-slot"><img src="./projects2/logos/one%20of%20a%20kind.png" alt="One of a Kind logo" onerror="this.style.display='none'"/></div>
+          <h3>One of a Kind</h3>
+        </div>
+        <div class="wc-back"><span>View Project →</span></div>
+      </div>
+    </button>
+    <button class="work-card slide-side" data-project="fitgeek" data-art="art-3">
+      <div class="wc-inner">
+        <div class="wc-front">
+          <div class="logo-slot"><img src="./projects2/logos/the%20fit%20geek%20show.PNG" alt="Fit Geek Show logo" onerror="this.style.display='none'"/></div>
+          <h3>Fit Geek Show</h3>
+        </div>
+        <div class="wc-back"><span>View Project →</span></div>
+      </div>
+    </button>
+    <button class="work-card slide-side" data-project="airborne" data-art="art-4">
+      <div class="wc-inner">
+        <div class="wc-front">
+          <div class="logo-slot"><img src="./projects2/logos/airborne%20aerial%20fitness.jpg" alt="Airborne Aerial logo" onerror="this.style.display='none'"/></div>
+          <h3>Airborne Aerial</h3>
+        </div>
+        <div class="wc-back"><span>View Project →</span></div>
+      </div>
+    </button>
+    <button class="work-card slide-side" data-project="lovemusic" data-art="art-5">
+      <div class="wc-inner">
+        <div class="wc-front">
+          <div class="logo-slot"><img src="./projects2/logos/love%20for%20music.png" alt="Love For Music logo" onerror="this.style.display='none'"/></div>
+          <h3>Love For Music</h3>
+        </div>
+        <div class="wc-back"><span>View Project →</span></div>
+      </div>
+    </button>
+    <button class="work-card slide-side" data-project="planecrazy" data-art="art-6">
+      <div class="wc-inner">
+        <div class="wc-front">
+          <div class="logo-slot"><img src="./projects2/logos/plane%20crazy.jpg" alt="Plane Crazy logo" onerror="this.style.display='none'"/></div>
+          <h3>Plane Crazy</h3>
+        </div>
+        <div class="wc-back"><span>View Project →</span></div>
+      </div>
+    </button>
+    <button class="work-card slide-side" data-project="nofiltr" data-art="art-7">
+      <div class="wc-inner">
+        <div class="wc-front">
+          <div class="logo-slot"><img src="./projects2/logos/nofiltr.png" alt="NoFiltr logo" onerror="this.style.display='none'"/></div>
+          <h3>NoFiltr</h3>
+        </div>
+        <div class="wc-back"><span>View Project →</span></div>
+      </div>
+    </button>
+    <button class="work-card slide-side" data-project="eraaura" data-art="art-8">
+      <div class="wc-inner">
+        <div class="wc-front">
+          <div class="logo-slot"><img src="./projects2/logos/era%20aura.png" alt="era aura logo" onerror="this.style.display='none'"/></div>
+          <h3>era aura</h3>
+        </div>
+        <div class="wc-back"><span>View Project →</span></div>
+      </div>
+    </button>
+    <button class="work-card slide-side" data-project="muddle" data-art="art-9">
+      <div class="wc-inner">
+        <div class="wc-front">
+          <div class="logo-slot"><img src="./projects2/logos/muddle%20kitchen.PNG" alt="Muddle Kitchen logo" onerror="this.style.display='none'"/></div>
+          <h3>Muddle Kitchen</h3>
+        </div>
+        <div class="wc-back"><span>View Project →</span></div>
+      </div>
+    </button>
+    <button class="work-card slide-side" data-project="lazycurries" data-art="art-10">
+      <div class="wc-inner">
+        <div class="wc-front">
+          <div class="logo-slot"><img src="./projects2/logos/luckyz%20kitchen.JPG" alt="Lazy Curries logo" onerror="this.style.display='none'"/></div>
+          <h3>Lazy Curries</h3>
+        </div>
+        <div class="wc-back"><span>View Project →</span></div>
+      </div>
+    </button>
+    <button class="work-card slide-side" data-project="other" data-art="art-11">
+      <div class="wc-inner">
+        <div class="wc-front">
+          <div class="logo-slot"><img src="./projects2/logos/other%20projects.png" alt="Other Projects" onerror="this.style.display='none'"/></div>
+          <h3>Other Projects</h3>
+        </div>
+        <div class="wc-back"><span>View Project →</span></div>
+      </div>
+    </button>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events" class="events section-green">
+  <p class="section-label reveal">Events</p>
+  <h2 class="section-title reveal">On <em>Ground</em>.</h2>
+
+  <div class="event-grid">
+    <div class="event-card reveal">
+      <div class="ev-head"><h4>Pudhe Chala Run Club Collaboration</h4><span class="ev-year">2025</span></div>
+      <p>Organized and managed an on-ground brand collaboration, including consumer sampling. Engaged directly with audiences to gather real-time feedback and enhance brand visibility.</p>
+    </div>
+    <div class="event-card reveal">
+      <div class="ev-head"><h4>International Health, Sports and Fitness Expo</h4><span class="ev-year">2025</span></div>
+      <p>Supported end-to-end stall operations, including coordination, sales, and consumer engagement. Designed marketing collaterals (pamphlets, LED billboard creatives, packaging) and managed product sampling and on-ground promotion.</p>
+    </div>
+    <div class="event-card reveal">
+      <div class="ev-head"><h4>Tanzeel Khan Live</h4><span class="ev-year">2023</span></div>
+      <p>Assisted in event execution through ushering and artist management, ensuring smooth audience flow and seamless coordination.</p>
+    </div>
+    <div class="event-card reveal">
+      <div class="ev-head"><h4>Trevor Noah Show</h4><span class="ev-year">2023</span></div>
+      <p>Handled front-of-house operations as an usher, managing audience seating and ensuring an organized and efficient event experience.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services section-pink">
+  <p class="section-label reveal">Services</p>
+  <h2 class="section-title reveal">I Help Brands <em>Build, Launch and Grow</em><br>Through Design, Content and Strategy.</h2>
+
+  <div class="service-grid">
+    <div class="service-card reveal"><h3>Graphic Design</h3><ul><li>Brand identity design (logos, color palettes, typography)</li><li>Marketing collaterals (flyers, brochures, posters)</li><li>Packaging design</li><li>Print & digital creatives</li><li>Presentation design (pitch decks, brand decks)</li></ul></div>
+    <div class="service-card reveal"><h3>Digital Art & Visual Content</h3><ul><li>Custom illustrations</li><li>Digital artwork for campaigns</li><li>Merchandise graphics (t-shirts, stickers, etc.)</li><li>Concept art & themed visual drops</li><li>Album/cover/poster-style artwork</li></ul></div>
+    <div class="service-card reveal"><h3>Social Media Design</h3><ul><li>Instagram feed curation & grid planning</li><li>Post & carousel design</li><li>Story templates & highlight covers</li><li>Reels covers & thumbnails</li><li>Branded content templates</li></ul></div>
+    <div class="service-card reveal"><h3>Social Media Management</h3><ul><li>Content planning & scheduling</li><li>Caption writing & copy direction</li><li>Hashtag strategy</li><li>Audience engagement (comments, DMs)</li><li>Monthly content calendars</li></ul></div>
+    <div class="service-card reveal"><h3>Marketing & Brand Strategy</h3><ul><li>Brand positioning & identity strategy</li><li>Campaign ideation & execution</li><li>Launch strategies (product/service drops)</li><li>Content strategy (what to post + why)</li><li>Competitor & trend analysis</li></ul></div>
+    <div class="service-card reveal"><h3>UI / Digital Experience Design</h3><ul><li>Mobile app & website UI design</li><li>Portfolio & landing page design</li><li>Wireframing & prototyping (Figma)</li><li>User journey & layout structuring</li></ul></div>
+  </div>
+</section>
+
+<!-- CONNECT -->
+<section id="connect" class="contact section-green">
+  <p class="section-label reveal">Let's Connect</p>
+  <h2 class="reveal">Ready to Create<br><em class="great">Something Great?</em></h2>
+
+  <p class="open-line reveal">Open to freelance, full-time &amp; exciting collabs.</p>
+
+  <button class="hello-btn reveal" id="helloBtn">
+    <span>Say Hello</span> <i class="btn-spark">✦</i>
+  </button>
+
+  <div class="contact-card" id="contactCard">
+    <div class="contact-row">
+      <span class="contact-label">PHONE</span>
+      <a href="tel:+917710993797" class="contact-value" id="phoneLink" data-copy-text="+91 7710993797">+91 7710993797</a>
+    </div>
+    <div class="contact-row">
+      <span class="contact-label">EMAIL</span>
+      <a href="mailto:niyatimerchant2002@gmail.com?subject=Hello%20Niyati%20%E2%80%94%20Let%27s%20Connect&body=Hi%20Niyati%2C%0A%0AI%20came%20across%20your%20portfolio%20and..." class="contact-value" id="emailLink" data-copy-text="niyatimerchant2002@gmail.com">niyatimerchant2002@gmail.com</a>
+    </div>
+    <div class="contact-cols">
+      <div class="contact-row">
+        <span class="contact-label">LOCATION</span>
+        <span class="contact-value">Mumbai, India</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">LINKEDIN</span>
+        <a href="https://www.linkedin.com/in/niyati-merchant-05ba8421b" target="_blank" rel="noopener" class="contact-value linkedin">Niyati Merchant</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2026 Niyati Merchant</footer>
+</section>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<!-- PROJECT MODAL / LIGHTBOX -->
+<div class="modal" id="projectModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-inner">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <h3 class="modal-title" id="modalTitle"></h3>
+
+    <div class="carousel">
+      <button class="car-arrow car-prev" id="carPrev" aria-label="Previous">‹</button>
+      <div class="car-window">
+        <div class="car-track" id="carTrack"></div>
+      </div>
+      <button class="car-arrow car-next" id="carNext" aria-label="Next">›</button>
+    </div>
+
+    <p class="car-counter" id="carCounter"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
